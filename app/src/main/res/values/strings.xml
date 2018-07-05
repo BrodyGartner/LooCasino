@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Loo Casino</string>
+
+    <string name="title_activity_splashscreen">splashscreen</string>
+
+    <string name="label_username">Username:</string>
+    <string name="label_password">Password:</string>
+    <string name="label_email">Email:</string>
+    <string name="button_login">LOGIN</string>
+    <string name="button_create">Create Account</string>
+    <string name="button_submit">Submit</string>
+    <string name="string_bet">Bet: </string>
+    <string name="string_playercard">Player Card</string>
+    <string name="string_dealercard">Dealer Card</string>
+    <string name="string_value">Value: </string>
+    <string name="string_service">Would you like to have casino ambiance?</string>
+    <string name="string_download_rules">Download Blackjack Stategy</string>
+
+
+</resources>

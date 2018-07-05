@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gartmedia.brody.loocasino">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/splashchip"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/splashchip"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity
+            android:name=".splashscreen"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_splashscreen"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".login"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".mainmenu"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".createaccount"
+            android:noHistory="true"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".wargame"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".blackjackgame"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".rulespage"
+            android:screenOrientation="fullSensor" />
+
+        <service android:name=".firebasenotifs">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".firebasemessaging"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".DownloadStategy"
+            android:screenOrientation="portrait" />
+        <activity android:name=".settings"
+            android:screenOrientation="fullSensor"/>
+
+        <service
+            android:name=".ambianceService"
+            android:enabled="true"
+            android:exported="true">
+
+        </service>
+    </application>
+
+</manifest>
